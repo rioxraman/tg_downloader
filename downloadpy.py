@@ -6,7 +6,7 @@ import asyncio
 api_id = 25430351         # 2
 api_hash = 'a788064d36c0b4a83b9a7963b748b4e1'
 session_name = 'session_chan_extract'  # local session file
-channel_id = -1003191592090  # your private channel
+channel_id = -1003810850200  # your private channel
 
 # 2755841354
 download_dir = "namaste dsa"
