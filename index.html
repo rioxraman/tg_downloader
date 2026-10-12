@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Immigration & Study Visa Consultants | Candid Wings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+        overflow-x: hidden;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .site-header-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      }
+      .brand-logo-text {
+        font-size: 24px;
+        font-weight: 800;
+        color: #0b3b60;
+        letter-spacing: -0.5px;
+        text-decoration: none !important;
+      }
+      .brand-logo-text span {
+        color: #e63946;
+      }
+      .slider-wrapper {
+        position: relative;
+      }
+      .owl-carousel .slide-item {
+        height: 520px;
+        overflow: hidden;
+        background-color: #1a1a1a;
+      }
+      .owl-carousel .slide-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.85;
+      }
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel .owl-nav button.owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 45px;
+        height: 45px;
+        border-radius: 50% !important;
+        background: rgba(0, 0, 0, 0.45) !important;
+        color: #fff !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .owl-carousel .owl-nav button.owl-prev { left: 20px; }
+      .owl-carousel .owl-nav button.owl-next { right: 20px; }
+      .icon-section {
+        padding: 50px 0;
+        background: #fdfdfd;
+      }
+      .icon-box {
+        padding: 25px;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        margin-bottom: 20px;
+      }
+      .icon-box i {
+        font-size: 38px;
+        color: #0b3b60;
+        margin-bottom: 12px;
+      }
+      .skill-section {
+        padding: 70px 0;
+      }
+      .skillbar {
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        background: #eee;
+        height: 35px;
+        border-radius: 5px;
+      }
+      .skillbar-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 600;
+        font-size: 13px;
+        color: #fff;
+        background: #0b3b60;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 0 15px;
+        height: 35px;
+        line-height: 35px;
+        z-index: 2;
+      }
+      .skillbar-bar {
+        height: 35px;
+        width: 100%;
+        background: #e63946;
+        border-radius: 5px;
+      }
+      .skill-bar-percent {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        font-size: 13px;
+        height: 35px;
+        line-height: 35px;
+        color: #333;
+        font-weight: 700;
+      }
+      .why-choose {
+        background: #0b3b60;
+        color: #fff;
+        padding: 60px 0;
+      }
+      .why-choose h3 {
+        font-size: 42px;
+        font-weight: 700;
+        color: #f1faee;
+      }
+      .why-choose p {
+        color: #a8dadc;
+      }
+      .country-card {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .country-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+      }
+      .country-image {
+        height: 200px;
+        position: relative;
+      }
+      .country-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .country-title {
+        position: absolute;
+        left: 20px;
+        bottom: 15px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .country-content {
+        padding: 20px;
+      }
+      .country-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px;
+      }
+      .country-list li {
+        border-bottom: 1px solid #f0f0f0;
+        padding: 8px 0 8px 22px;
+        position: relative;
+        font-size: 14px;
+      }
+      .country-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #0b3b60;
+        font-weight: bold;
+      }
+      .country-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #0b3b60;
+        color: #fff !important;
+        padding: 10px 18px;
+        border-radius: 8px;
+        text-decoration: none !important;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .country-btn:hover {
+        background: #e63946;
+      }
+      .main-footer {
+        background: #111b27;
+        color: #e0e0e0;
+        padding: 60px 0 30px;
+      }
+      .main-footer h3 {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      .main-footer a {
+        color: #a8dadc;
+      }
+      .mobile-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        display: flex;
+        border-top: 1px solid #ddd;
+        z-index: 999;
+      }
+      .mobile-footer a {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #0b3b60;
+        text-decoration: none;
+      }
+      @media (min-width: 768px) {
+        .mobile-footer { display: none; }
+      }
+      @media (max-width: 767px) {
+        .owl-carousel .slide-item { height: 300px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- Header -->
+      <header id="masthead">
+        <div class="site-header-menu bg-white">
+          <div class="container py-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <div>
+                <a href="/" class="brand-logo-text">Candid<span>Wings</span></a>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="d-none d-md-block mr-4 text-right">
+                  <span class="d-block small text-muted">Get FREE Consultation for</span>
+                  <strong>VISA &amp; IMMIGRATION</strong>
+                </div>
+                <div>
+                  <a href="tel:+917206766733" class="btn btn-danger font-weight-bold px-3 py-2">
+                    <i class="fa fa-phone mr-1"></i> (+91) 7206766733
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div style="padding-top: 85px;"></div>
+
+      <!-- Owl Carousel Banner -->
+      <div class="slider-wrapper">
+        <div class="owl-carousel owl-theme">
+          <div class="slide-item">
+            <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1400&q=80" alt="Australia Immigration">
+          </div>
+          <div class="slide-item">
+            <img src="https://images.unsplash.com/photo-1517935703635-2717090c2210?auto=format&fit=crop&w=1400&q=80" alt="Canada PR">
+          </div>
+          <div class="slide-item">
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=80" alt="UK Visa">
+          </div>
+          <div class="slide-item">
+            <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=1400&q=80" alt="USA Visa">
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <section class="text-center icon-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="icon-box">
+                <i class="fa fa-handshake-o"></i>
+                <h5 class="font-weight-bold">Hand-Holding Support</h5>
+                <p class="text-muted small mb-0">Complete profile assessment, documentation, and filing guidance.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-box">
+                <i class="fa fa-shield"></i>
+                <h5 class="font-weight-bold">100% Transparent</h5>
+                <p class="text-muted small mb-0">Honest eligibility evaluations with zero hidden fees or false promises.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-box">
+                <i class="fa fa-bolt"></i>
+                <h5 class="font-weight-bold">Fast Processing</h5>
+                <p class="text-muted small mb-0">Prompt application submissions aligned with priority government draws.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="skill-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+              <img class="img-fluid rounded shadow" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80" alt="Candid Wings Advisors">
+            </div>
+            <div class="col-lg-7">
+              <span class="text-danger font-weight-bold text-uppercase">About Us</span>
+              <h2 class="font-weight-bold mt-1 mb-3">Candid Wings Consultants</h2>
+              <p class="text-muted">Candid Wings is dedicated to turning global career and permanent residency goals into reality. Founded on the principles of candor and precision, our migration specialists guide students, skilled professionals, and business investors through every step of global relocation.</p>
+              
+              <div class="pt-3">
+                <div class="skillbar">
+                  <div class="skillbar-title">PR Success Rate</div>
+                  <div class="skillbar-bar"></div>
+                  <div class="skill-bar-percent">100%</div>
+                </div>
+                <div class="skillbar">
+                  <div class="skillbar-title">Client Satisfaction</div>
+                  <div class="skillbar-bar"></div>
+                  <div class="skill-bar-percent">100%</div>
+                </div>
+                <div class="skillbar">
+                  <div class="skillbar-title">Documentation Accuracy</div>
+                  <div class="skillbar-bar"></div>
+                  <div class="skill-bar-percent">100%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metrics Counter -->
+      <section class="why-choose text-center">
+        <div class="container">
+          <h2 class="font-weight-bold mb-5">Why Choose Candid Wings?</h2>
+          <div class="row">
+            <div class="col-6 col-md-3 mb-4">
+              <h3>8+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <h3>10K+</h3>
+              <p>Applications Processed</p>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <h3>50+</h3>
+              <p>Visa Specialists</p>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <h3>100%</h3>
+              <p>Client Dedication</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Eligibility Assessment Form -->
+      <section class="py-5 bg-light" id="freeCounsel">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="font-weight-bold">Check Your Immigration Eligibility</h2>
+            <p class="text-muted">Submit your details to evaluate points for Express Entry, PNP, or Study Permits.</p>
+          </div>
+
+          <div class="card border-0 shadow-sm p-4 p-md-5">
+            <form id="checkEligibility" method="post" action="#" onsubmit="return validateCheckForm()" autocomplete="off">
+              <!-- English Level -->
+              <div class="form-group mb-4">
+                <label class="font-weight-bold">What is your English proficiency level? <span class="text-danger">*</span></label>
+                <div class="row">
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="eng1" name="englishLevel" value="Excellent (8+ Band)" class="custom-control-input" checked>
+                      <label class="custom-control-label" for="eng1">Excellent (8+ Band)</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="eng2" name="englishLevel" value="Good (7 Band)" class="custom-control-input">
+                      <label class="custom-control-label" for="eng2">Good (7 Band)</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="eng3" name="englishLevel" value="Average (6 Band)" class="custom-control-input">
+                      <label class="custom-control-label" for="eng3">Average (6 Band)</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="eng4" name="englishLevel" value="Poor (5 Band)" class="custom-control-input">
+                      <label class="custom-control-label" for="eng4">Modest (&lt; 6 Band)</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Age -->
+              <div class="form-group mb-4">
+                <label class="font-weight-bold">Age Group <span class="text-danger">*</span></label>
+                <div class="row">
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="age1" name="age" value="18-35 years" class="custom-control-input" checked>
+                      <label class="custom-control-label" for="age1">18 - 35 years</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="age2" name="age" value="36-40 years" class="custom-control-input">
+                      <label class="custom-control-label" for="age2">36 - 40 years</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="age3" name="age" value="40+ years" class="custom-control-input">
+                      <label class="custom-control-label" for="age3">40+ years</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education -->
+              <div class="form-group mb-4">
+                <label class="font-weight-bold">Highest Level of Education <span class="text-danger">*</span></label>
+                <div class="row">
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="edu1" name="education" value="Masters / PhD" class="custom-control-input" checked>
+                      <label class="custom-control-label" for="edu1">Masters / PhD</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="edu2" name="education" value="Graduation (4 Years)" class="custom-control-input">
+                      <label class="custom-control-label" for="edu2">Graduation Degree</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="edu3" name="education" value="Diploma (3 Years)" class="custom-control-input">
+                      <label class="custom-control-label" for="edu3">3-Year Diploma</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience -->
+              <div class="form-group mb-4">
+                <label class="font-weight-bold">Work Experience <span class="text-danger">*</span></label>
+                <div class="row">
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="exp1" name="experience" value="1-3 years" class="custom-control-input" checked>
+                      <label class="custom-control-label" for="exp1">1 - 3 years</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="exp2" name="experience" value="4-5 years" class="custom-control-input">
+                      <label class="custom-control-label" for="exp2">4 - 5 years</label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="exp3" name="experience" value="6+ years" class="custom-control-input">
+                      <label class="custom-control-label" for="exp3">6+ years</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Inputs -->
+              <div class="row mt-4">
+                <div class="col-md-6 mb-3">
+                  <label>Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" name="name" id="checkName" placeholder="Your Name">
+                  <small class="text-danger" id="checkNameError"></small>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label>Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" name="email" id="checkEmail" placeholder="name@domain.com">
+                  <small class="text-danger" id="checkEmailError"></small>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label>Phone Number <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" name="phone" id="checkPhone" placeholder="10-digit mobile number">
+                  <small class="text-danger" id="checkPhoneError"></small>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label>State <span class="text-danger">*</span></label>
+                  <select name="state" class="form-control" id="checkState">
+                    <option value="" selected>Select State</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <small class="text-danger" id="checkStateError"></small>
+                </div>
+              </div>
+
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-danger btn-lg px-5 font-weight-bold">Check My Eligibility</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Global Opportunities Grid -->
+      <section class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="font-weight-bold">Explore Global Opportunities</h2>
+            <p class="text-muted">Choose your desired immigration or study abroad destination.</p>
+          </div>
+
+          <div class="row">
+            <!-- Canada -->
+            <div class="col-md-4 mb-4">
+              <div class="country-card h-100">
+                <div class="country-image">
+                  <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=600&q=80" alt="Canada">
+                  <div class="country-title"><h3>Canada</h3></div>
+                </div>
+                <div class="country-content">
+                  <ul class="country-list">
+                    <li>Express Entry (FSW / CEC)</li>
+                    <li>Provincial Nominee Program (PNP)</li>
+                    <li>Post-Graduate Work Permit / Study</li>
+                  </ul>
+                  <a href="#freeCounsel" class="country-btn">Apply Now <span>&rarr;</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Australia -->
+            <div class="col-md-4 mb-4">
+              <div class="country-card h-100">
+                <div class="country-image">
+                  <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=600&q=80" alt="Australia">
+                  <div class="country-title"><h3>Australia</h3></div>
+                </div>
+                <div class="country-content">
+                  <ul class="country-list">
+                    <li>Skilled Independent (Subclass 189)</li>
+                    <li>Skilled Nominated (Subclass 190)</li>
+                    <li>Student Visa (Subclass 500)</li>
+                  </ul>
+                  <a href="#freeCounsel" class="country-btn">Apply Now <span>&rarr;</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- UK -->
+            <div class="col-md-4 mb-4">
+              <div class="country-card h-100">
+                <div class="country-image">
+                  <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=600&q=80" alt="United Kingdom">
+                  <div class="country-title"><h3>United Kingdom</h3></div>
+                </div>
+                <div class="country-content">
+                  <ul class="country-list">
+                    <li>Skilled Worker Visa</li>
+                    <li>Tier 4 Student Visa</li>
+                    <li>Graduate Route / Work Permit</li>
+                  </ul>
+                  <a href="#freeCounsel" class="country-btn">Apply Now <span>&rarr;</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="font-weight-bold">Frequently Asked Questions</h2>
+          </div>
+          <div class="accordion" id="faqAccordion">
+            <div class="card mb-2 border-0 shadow-sm">
+              <div class="card-header bg-white" id="q1">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-dark font-weight-bold text-left w-100" type="button" data-toggle="collapse" data-target="#c1">
+                    How do I start my Canada PR application?
+                  </button>
+                </h5>
+              </div>
+              <div id="c1" class="collapse show" data-parent="#faqAccordion">
+                <div class="card-body text-muted">
+                  The initial step involves an Educational Credential Assessment (ECA) through WES or equivalent, taking language tests (IELTS/CELPIP), and creating an Express Entry profile to calculate your CRS rank.
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-2 border-0 shadow-sm">
+              <div class="card-header bg-white" id="q2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-dark font-weight-bold text-left w-100 collapsed" type="button" data-toggle="collapse" data-target="#c2">
+                    What is the minimum CRS required for Express Entry?
+                  </button>
+                </h5>
+              </div>
+              <div id="c2" class="collapse" data-parent="#faqAccordion">
+                <div class="card-body text-muted">
+                  Cut-off scores vary by category and draw type (e.g., General vs. Category-Based draws like STEM, Healthcare, or French-language proficiency). Connect with our consultants for targeted score optimization.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 mb-4">
+              <h2 class="text-white font-weight-bold">Candid Wings</h2>
+              <p class="text-muted pr-lg-4">Your trusted partner for immigration, overseas education, and PR visas. We deliver clear guidance and high-success visa processing solutions.</p>
+              <a href="#freeCounsel" class="btn btn-danger font-weight-bold mt-2">Get Free Consultation</a>
+            </div>
+            <div class="col-lg-3 mb-4">
+              <h3>Office Location</h3>
+              <p class="text-muted"><i class="fa fa-map-marker mr-2"></i> SCO 38, 2nd Floor, Sector 30C, Chandigarh, India - 160030</p>
+              <p class="text-muted"><i class="fa fa-clock-o mr-2"></i> Mon - Sat: 9:30 AM - 5:30 PM</p>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <h3>Contact Us</h3>
+              <p><i class="fa fa-phone mr-2"></i> <a href="tel:+917206766733">(+91) 7206766733</a></p>
+              <p><i class="fa fa-envelope mr-2"></i> <a href="mailto:info@candidwings.com">info@candidwings.com</a></p>
+              <p><i class="fa fa-globe mr-2"></i> <a href="https://candidwings.com">www.candidwings.com</a></p>
+            </div>
+          </div>
+          <hr class="bg-secondary">
+          <div class="text-center pt-2">
+            <small class="text-muted">&copy; <script>document.write(new Date().getFullYear());</script> Candid Wings Consultants. All Rights Reserved.</small>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Mobile Sticky Bar -->
+      <div class="mobile-footer">
+        <a href="tel:+917206766733"><i class="fa fa-phone mr-1"></i> Call Us</a>
+        <a href="#freeCounsel" class="border-left"><i class="fa fa-check-circle mr-1"></i> Check Eligibility</a>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 3500,
+          autoplayHoverPause: true,
+          smartSpeed: 700,
+          navText: ['<span>&lsaquo;</span>', '<span>&rsaquo;</span>']
+        });
+      });
+
+      function validateCheckForm() {
+        var name = $("#checkName").val().trim();
+        var email = $("#checkEmail").val().trim();
+        var phone = $("#checkPhone").val().trim();
+        var state = $("#checkState").val();
+        var isValid = true;
+
+        if (!name) {
+          $("#checkNameError").text("Please enter your name");
+          isValid = false;
+        } else {
+          $("#checkNameError").text("");
+        }
+
+        if (!email) {
+          $("#checkEmailError").text("Please enter your email");
+          isValid = false;
+        } else {
+          $("#checkEmailError").text("");
+        }
+
+        var phonePattern = /^[0-9]{10}$/;
+        if (!phonePattern.test(phone.replace(/\D/g, ''))) {
+          $("#checkPhoneError").text("Please enter a valid 10-digit number");
+          isValid = false;
+        } else {
+          $("#checkPhoneError").text("");
+        }
+
+        if (!state) {
+          $("#checkStateError").text("Please select your state");
+          isValid = false;
+        } else {
+          $("#checkStateError").text("");
+        }
+
+        if (isValid) {
+          alert("Thank you! Your assessment has been submitted. Candid Wings will contact you shortly.");
+        }
+        return false; // Prevent actual form submit for preview demo
+      }
+    </script>
+  </body>
+</html>
